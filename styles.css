@@ -1,0 +1,326 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: ease-in-out 0.3s;
+    scroll-behavior: smooth;
+}
+
+body{
+    color: rgb(64, 64, 64);
+}
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #6fdcbf;
+    height: 10vh;
+}
+
+header h1{
+    color: #6fdcbf;
+    font-size: 4rem;
+    font-family: 'Dancing Script';
+    animation: slide 2s linear 1;
+}
+
+.header-left{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eeebef;
+}
+
+.header-right{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #6fdcbf;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8%;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+ul li{
+    list-style: none;
+}
+
+a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: rgb(64, 64, 64);
+    font-family: 'Poppins'
+}
+
+a:hover{
+    color: #eeebef;
+    text-decoration: none;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+#aboutme{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+.aside-left{
+    display: flex;
+    align-items: center;
+    background-color: #eeebef;
+    width: 35%;
+    height: 100%;
+}
+
+.desktop{
+    position: relative;
+    width: 80rem;
+    left: 10rem;
+}
+
+img{
+    width: 100%;
+}
+
+.description{
+    background-color: #6fdcbf;
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+aside h2{
+    font-family: 'Dancing Script';
+}
+
+.description h2{
+    transform: rotate(-5deg);
+    margin-right: 33%;
+}
+
+.description h3{
+    font-size: 3rem;
+    font-family: 'Poppins';
+}
+
+.transparent{
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+span:hover{
+    color: rgb(64, 64, 64);
+    cursor: pointer;
+}
+
+#projects{
+    background-color: #ae8fdb;
+    font-family: 'Poppins';
+    height: 100vh;
+    width: 100%;
+}
+
+.projects-description{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.direccion{
+    border: solid black;
+    max-width: 300px;
+    position: relative;
+    background-color: #f7f7f7;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px 6px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    align-content: start;
+}
+
+.direccion:hover{
+    animation: slide 2s linear 1;
+}
+
+#projects .projects-description h1{
+    grid-column: 3;
+    grid-row: 2;
+    font-size: 3rem;
+}
+
+.project-one{
+    grid-area: 3 / 3 / 6 / 6;
+}
+
+.project-two{
+    grid-area: 2 / 7 / 5 / 10;
+}
+
+.project-three{
+    grid-area: 6 / 6 / 9 / 9;
+}
+
+.button{
+    grid-row: 7;
+    grid-column: 3;
+}
+
+#contact{
+    width: 100%;
+    height: 100%;
+    background-color: #eeebef;
+} 
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 40px;
+    color: #2A9D8F;
+} 
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder{
+    color: #E9C46A;
+}
+
+input:hover, textarea:hover{
+    box-shadow: 0 2px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: all .5s ease;
+} 
+
+input[type="submit"]:hover{
+    background-color: #2A9D8F;
+} 
+
+footer{
+    display: flex;
+    padding: 40px;
+    gap: 30%;
+    justify-content: center;
+    background-color: #eeebef;
+} 
+
+footer a{
+    text-decoration: none;
+} 
+
+footer a:hover{
+    color: #2A9D8F;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateY(-20px);
+    }
+
+    25%{
+        transform: translateY(15px);
+    }
+
+    75%{
+        transform: translateY(-10px);     
+    }
+
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+@media (max-width: 1157px) {
+    .desktop{
+        left: 0;
+    }
+}
+
+@media (max-width: 921px) {
+    .last-name{
+        display: none;
+        }
+
+    .projects-description{
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 646px) {
+
+    .desktop{
+        display: none;
+    }
+
+    .description{
+        width: 100%;
+    }
+
+    .description h3{
+        font-size: 2rem;
+    }
+
+    header{
+        flex-direction: column;
+        height: 20vh;
+    }
+
+    .header-left{
+        height: 50%;
+        background-color: #6fdcbf;
+    }
+
+    header .header-left h1{
+        color: rgb(64, 64, 64);
+    }
+
+    .header-right{
+        height: 50%;
+    }
+
+    ul{
+        justify-content: center;
+    }
+
+    .aside-left{
+        display: none;
+    }
+
+    .projects-description{
+        grid-template-rows:  1fr;
+        grid-template-columns: 1fr;
+    }
+
+}

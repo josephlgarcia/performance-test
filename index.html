@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <!--In this section (head), the metadata is added-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="dscription" content="This is my personal portfolio, where you can to find a short description of me :)">
+    <meta name="keywords" content="riwi, training, coder, barranquilla">
+    <meta name="author" content="Joseph Luis García Escobar">
+    <meta name="designer" content="Joseph García">
+    <meta name="organization" content="riwi">
+    <meta name="copyright" content="All rights reserved">
+    <meta name="sitedomain" content="https://Mi_primera_web.com">
+    <!--robots de búsquedas-->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <meta name="revisit-after" content="15days">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="styles.css"> <!--The CSS of the web page is referenced here-->
+
+    <title>My personal portfolio</title> <!--title of the web page-->
+</head>
+
+<body>
+
+    <header>
+        <div class="header-left">
+            <h1>Joseph <span class="last-name">García</span></h1>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul>
+                    <li><a href="#aboutme">aboutme</a></li>
+                    <li><a href="#projects">projects</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="aboutme">
+            <aside class="aside-left">
+                <div class="desktop">
+                    <img src="pictures/desktop.png" alt="desktop">
+                </div>
+            </aside>
+            <aside class="description">
+                <h2> 👋 Hi, I'm Joseph</h2>
+                <h3>I like making <span class="transparent">fun</span>, <br> interactive things <br> with code. I also <br> <span class="transparent">talk</span> &
+                <span class="transparent">write</span> about <br> those things.</h3>
+            </aside>
+        </section>
+
+        <section id="projects">
+            <article class="projects-description">
+                <h1>Projects.</h1>
+                <div class="direccion project-one">
+                    <h1>. . .</h1><hr>            
+                    <h3>Project 1: Portfolio Website</h3>
+                    <p>This is my first project using HTML and CSS, where I built a personal portfolio.</p>
+                </div>
+                <div class="direccion project-two">
+                    <h1>. . .</h1><hr>
+                    <h3>Project 2: Inventory Management System</h3>
+                    <p>This is my proposal for a program where you can manage your inventory.</p>
+                </div>
+                <div class="direccion project-three">
+                    <h1>. . .</h1><hr>
+                    <h3>Project 3: BMI-Calculator</h3>
+                    <p>This program quickly and easily calculates your Body Mass Index (BMI) to help you determine if your weight is within a healthy range.</p>
+                </div>
+                <div class="button">
+                    <button><a target="_blank" href="https://github.com/josephlgarcia?tab=repositories">visit my repositories</a></button>
+                </div>
+            </article>
+        </section>
+
+        <section id="contact"> <!--"contact me" section-->
+            <h2>Contact.</h2>
+            <form action="/send" method="post"> <!--User interaction-->
+                <label for="name">Name:</label>
+                <input placeholder="type here" type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input placeholder="type here" type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea placeholder="type here" name="message" id="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+
+    <footer> <!--footer section-->
+        <a href="mailto:josephgarciaescobar597@gmail.com">Gmail</a>
+        <a href="https://github.com/josephlgarcia" target="_blank">Github</a>
+    </footer>
+
+
+</body>
+
+</html>
